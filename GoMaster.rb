@@ -24,3 +24,5 @@ class Go
         }
     end
 end
+
+Go.new(9)

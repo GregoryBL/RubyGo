@@ -7,6 +7,7 @@ class Board
         @board = Array.new(@size * @size) {|i| Point.new(i, self)}
         @turn = :black
         @groups = Array.new
+        @board.each{|i| i.init_neighbors }
     end
     
     def get_point (location)

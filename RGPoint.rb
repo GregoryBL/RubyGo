@@ -1,3 +1,5 @@
+require 'Set'
+
 class Point
     
     attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors, :group, :liberty_of
@@ -7,18 +9,28 @@ class Point
         @board = board
         @location = location
         @color = nil # nil, :black, or :white
-        @top = location.divmod(@board.size)[0] < @board.size ? @board.get_point(point + @size) : nil
-        @left = location.divmod(@board.size)[1] != 1 ? @board.get_point(point - 1) : nil
-        @right = location.divmod(@board.size)[1] != @board.size ? @board.get_point(point + 1) : nil
-        @bottom = location.divmod(@board.size)[0] > 1 ? @board.get_point(point - @size) : nil
-        @neighbors = [@top, @right, @bottom, @neighbors].keep_if {|i| i }
-        @open_neighbors = @neighbors
-        @liberty_of = Set.new #groups
+        @top = nil
+        @left = nil
+        @right = nil
+        @bottom = nil
+        @neighbors = nil
+        @open_neighbors = nil
+        @liberty_of = Object::Set.new #groups
         @group = nil
         @will_kill = Set.new
         @ko_point = false
     end
-            
+    
+    def init_neighbors
+        b_s = @board.size
+        @top = location.divmod(b_s)[0] < b_s ? @board.get_point(location + b_s) : nil
+        @left = location.divmod(b_s)[1] != 1 ? @board.get_point(@location - 1) : nil
+        @right = location.divmod(b_s)[1] != b_s ? @board.get_point(@location + 1) : nil
+        @bottom = location.divmod(b_s)[0] > 1 ? @board.get_point(@location - b_s) : nil
+        @neighbors = [@top, @right, @bottom, @left].keep_if {|i| i }
+        @open_neighbors = @neighbors
+    end
+    
     def add_stone (color) #not an illegal move and is color's turn
         @color = color
         @will_kill.each{|i| i.dead}

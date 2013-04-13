@@ -1,7 +1,6 @@
 class Group
     
     attr_accessor :points, :liberties, :color
-    require "RGGraphics"
     
     def initialize (point)
         @color = point.color
