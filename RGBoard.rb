@@ -1,6 +1,6 @@
 class Board
     
-    attr_accessor :size, :ko_point :turn
+    attr_accessor :size, :ko_point, :turn
     
     def initialize (size=19)
         @size = size

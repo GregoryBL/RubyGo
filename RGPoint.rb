@@ -16,7 +16,7 @@ class Point
         @liberty_of = Set.new #groups
         @group = nil
         @will_kill = Set.new
-        @ko_point? = false
+        @ko_point = false
     end
             
     def add_stone (color) #not an illegal move and is color's turn

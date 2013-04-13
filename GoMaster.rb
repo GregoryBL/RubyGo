@@ -1,4 +1,4 @@
-require_relative './RubyGoGraphics'
+require_relative './RGGraphics'
 require_relative './RGBoard'
 require_relative './RGPoint'
 require_relative './RGGroup'
