@@ -25,4 +25,13 @@ class Go
     end
 end
 
-Go.new(9)
+game = Go.new(9)
+game.board.play(:black, 0)
+game.board.play(:white, 1)
+game.board.play(:black, 9)
+game.board.play(:white, 19)
+game.board.play(:black, 18)
+game.board.play(:white, 10)
+
+puts game.board.get_point(0).to_s
+puts game.board.get_point(0).group.to_s

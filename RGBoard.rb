@@ -1,12 +1,14 @@
 class Board
     
-    attr_accessor :size, :ko_point, :turn
+    attr_accessor :size, :ko_point, :turn, :white_captures, :black_captures
     
     def initialize (size=19)
         @size = size
         @board = Array.new(@size * @size) {|i| Point.new(i, self)}
         @turn = :black
         @groups = Array.new
+        @white_captures = 0
+        @black_captures = 0
         @board.each{|i| i.init_neighbors }
     end
     
@@ -19,16 +21,16 @@ class Board
         
         if color != turn
             raise "Not your turn"
-        elsif !point.color
+        elsif point.color
             raise "Illegal Move: Point occupied"
         elsif point.open_neighbors.empty? && point.will_kill.empty?
             raise "Illegal Move: Suicide"
-        elsif point.ko_point?
+        elsif point.ko_point
             raise "Illegal Move: Ko"
         else
              point.add_stone(color)
         end
         
-        turn = turn == :black ? :white : :black
+        @turn = ((turn == :black) ? :white : :black)
     end     
 end

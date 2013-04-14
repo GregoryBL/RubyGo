@@ -31,20 +31,34 @@ class Group
     def dead
         @points.each{|i|
             i.remove_stone
-            i.group = nil
         }
     end
     
     def add_point (point)
         @points << point
-        @liberties.remove(point)
+        @liberties.delete(point)
     end
     
     def combine_group (group)
         @liberties.union(group.liberties)
+            
         group.points.each{|i|
             self.add_point(i)
         }
-        group.dead
+        if num_liberties == 1
+            @liberties.each #NEEDS HELP
+        end
+        #group.dead
+    end
+    
+    def remove_liberty (point)
+        @liberties.delete(point)
+        if num_liberties == 1
+            @liberties.each{|i| i.will_kill.add([color, self])}
+        end
+    end
+    
+    def to_s
+        "Color: " + @color.to_s + ", Points: " + @points.inject(""){|string, i| string + i.to_s} + ", Liberties: " + @liberties.inject(""){|string, i| string + i.to_s}
     end
 end
