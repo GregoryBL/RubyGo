@@ -34,8 +34,9 @@ class Point
     def add_stone (color) #not an illegal move and is color's turn
         @color = color
         
-        @will_kill.each{|i| if i[0] != color then i[1].dead end}
+        @will_kill.each{|i| if i[0] != color then i[1].dead end }
         
+        @neighbors.each{|i| }
         connected_groups = Set.new
         puts self.to_s + " is a liberty of:"
         @liberty_of.each{|i| puts i}
