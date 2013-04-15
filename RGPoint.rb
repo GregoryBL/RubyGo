@@ -1,3 +1,12 @@
+# Ruby Go : Greg Berns-Leone
+# RGPoint.rb
+#
+# Represents a point (location) on the goban.
+# 
+# Responsible for taking legal user actions from RGBoard and passing that information
+# to relevant groups and other points. It also should add and remove stones. RGBoard
+# is a collection of RGPoints.
+
 require 'Set'
 
 class Point

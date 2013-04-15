@@ -1,3 +1,11 @@
+# Ruby Go : Greg Berns-Leone
+# RGGroup.rb
+#
+# Represents a solidly connected group of stones.
+# 
+# Responsible for keeping track of liberties, adding points, combining with other
+# groups, and deleting itself if captured.
+
 class Group
     
     attr_accessor :points, :liberties, :color

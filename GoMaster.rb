@@ -1,3 +1,8 @@
+# Ruby Go : Greg Berns-Leone
+# GoMaster.rb
+#
+# Sets up the game and the graphics.
+
 require_relative './RGGraphics'
 require_relative './RGBoard'
 require_relative './RGPoint'

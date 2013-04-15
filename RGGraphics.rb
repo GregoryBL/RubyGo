@@ -1,3 +1,8 @@
+# Ruby Go : Greg Berns-Leone
+# RGGraphics.rb
+#
+# Provides a rudementary representation of the game.
+
 require 'tk'
 
 class GoRoot

@@ -1,3 +1,11 @@
+# Ruby Go : Greg Berns-Leone
+# RGBoard.rb
+#
+# Represents the goban.
+# 
+# Responsible for initializing the points, validating whether moves are legal, and
+# keeping track of turns and captures. Also serves the point for a location.
+
 class Board
     
     attr_accessor :size, :ko_point, :turn, :white_captures, :black_captures
