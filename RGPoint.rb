@@ -41,14 +41,18 @@ class Point
     end
     
     def add_stone (color) #not an illegal move and is color's turn
-        @color = color
+        #place stone
+        @color = color 
         
+        #kill any group in atari
         @will_kill.each{|i| if i[0] != color then i[1].dead end }
         
-        @neighbors.each{|i| }
-        connected_groups = Set.new
+        #test
         puts self.to_s + " is a liberty of:"
         @liberty_of.each{|i| puts i}
+        
+        #find any groups of the same color that are connected.
+        connected_groups = Set.new
         @liberty_of.each{|i|
             if i.color == color
                 connected_groups.add(i)
@@ -57,7 +61,7 @@ class Point
                 i.remove_liberty(self)
             end }
             
-        #puts connected_groups.each{|i| i.to_s} 
+        #create a new group or tell groups to connect and add self
         if connected_groups.length == 0
             @group = Group.new(self)
             puts "no connected groups"
@@ -70,8 +74,14 @@ class Point
             puts connected_groups.length.to_s + " connected groups"
             #puts @group.to_s
         end
+        
+        #tell open neighbors they are a liberty of this group
         @open_neighbors.each{|i| i.add_liberty_of(@group)}
+        
+        #tell neighbors self is no longer an open neighbor
         @neighbors.each{|i| i.remove_open_neighbor(self)}
+        
+        #tests
         puts "color = " + color.to_s
         puts "location = " + location.to_s
         puts "neighbors = " + neighbors.inject(""){|string, i| string + i.to_s}
