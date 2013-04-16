@@ -42,31 +42,33 @@ class Group
         }
     end
     
-    def add_point (point)
-        @points << point
-        @liberties.delete(point)
-    end
-    
-    def combine_group (group)
-        @liberties.union(group.liberties)
+    def combine_group (group, at_point)
+        @liberties = @liberties.union(group.liberties)
+        puts "Liberties = "
+        @liberties.each { |i| puts i.to_s}
+        remove_liberty(at_point)
             
         group.points.each{|i|
-            self.add_point(i)
+            @points << point
+            i.group = self
         }
-        if num_liberties == 1
-            @liberties.each #NEEDS HELP
+        if num_liberties > 1
+            @liberties.each {|i| i.will_kill.delete [@color, self] }
+        else
+            @liberties.each {|i| i.will_kill.add [@color, self]}
         end
-        #group.dead
     end
     
     def remove_liberty (point)
         @liberties.delete(point)
         if num_liberties == 1
-            @liberties.each{|i| i.will_kill.add([color, self])}
+            puts "set will kill" + self.to_s + " at:"
+            @liberties.each{|i| i.will_kill.add([color, self])
+                puts i.to_s}
         end
     end
     
     def to_s
-        "Color: " + @color.to_s + ", Points: " + @points.inject(""){|string, i| string + i.to_s} + ", Liberties: " + @liberties.inject(""){|string, i| string + i.to_s}
+        "{Color: " + @color.to_s + ", Points: " + @points.inject(""){|string, i| string + i.to_s} + ", Liberties: " + @liberties.inject(""){|string, i| string + i.to_s} + "}"
     end
 end

@@ -11,8 +11,8 @@ require 'Set'
 
 class Point
     
-    attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors, :group, :liberty_of
-    attr_accessor :will_kill, :ko_point
+    attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors, :liberty_of
+    attr_accessor :will_kill, :ko_point, :group
     
     def initialize (location,board)
         @board = board
@@ -44,41 +44,29 @@ class Point
         #place stone
         @color = color 
         
-        #kill any group in atari
+        #kill any group in atari and clear list
         @will_kill.each{|i| if i[0] != color then i[1].dead end }
+        @will_kill = Set.new
         
         #test
         puts self.to_s + " is a liberty of:"
         @liberty_of.each{|i| puts i}
         
         #find any groups of the same color that are connected.
-        connected_groups = Set.new
+        @group = Group.new(self)
         @liberty_of.each{|i|
             if i.color == color
-                connected_groups.add(i)
-                i.remove_liberty(self)
+                puts "connected " + i.to_s + " to " + @group.to_s
+                @group.combine_group(i, self)
+                puts @group.to_s
             else
                 i.remove_liberty(self)
             end }
-            
-        #create a new group or tell groups to connect and add self
-        if connected_groups.length == 0
-            @group = Group.new(self)
-            puts "no connected groups"
-        elsif connected_groups.size == 1
-            @group = connected_groups.to_a[0]
-            @group.add_point(self)
-            puts "one connected group"
-        else
-            @group = connected_groups.to_a.inject{|result, n| result.combine_group(n)}
-            puts connected_groups.length.to_s + " connected groups"
-            #puts @group.to_s
-        end
         
         #tell open neighbors they are a liberty of this group
         @open_neighbors.each{|i| i.add_liberty_of(@group)}
         
-        #tell neighbors self is no longer an open neighbor
+        #tell neighbors this location is no longer an open neighbor
         @neighbors.each{|i| i.remove_open_neighbor(self)}
         
         #tests
@@ -110,9 +98,6 @@ class Point
     
     def remove_open_neighbor (point)
         @open_neighbors.delete(point)
-        if @group 
-            @group.remove_liberty(point)
-        end
     end
     
     def add_liberty_of (group)
