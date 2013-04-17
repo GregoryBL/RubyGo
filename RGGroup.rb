@@ -40,22 +40,25 @@ class Group
         @points.each{|i|
             i.remove_stone
         }
+        @liberties.each{|i|
+            i.libertiy_of.delete(self)
+        }
     end
     
     def combine_group (group, at_point)
         @liberties = @liberties.union(group.liberties)
-        puts "Liberties = "
-        @liberties.each { |i| puts i.to_s}
+        group.liberties.each{|i| 
+            i.liberty_of.delete(group)}
         remove_liberty(at_point)
             
         group.points.each{|i|
-            @points << point
+            @points << i
             i.group = self
         }
         if num_liberties > 1
-            @liberties.each {|i| i.will_kill.delete [@color, self] }
+            @liberties.each {|i| i.will_kill.delete([@color, self]) }
         else
-            @liberties.each {|i| i.will_kill.add [@color, self]}
+            @liberties.each {|i| i.will_kill.add([@color, self])}
         end
     end
     

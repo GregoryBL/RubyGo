@@ -37,6 +37,5 @@ game.board.play(:black, 9)
 game.board.play(:white, 19)
 game.board.play(:black, 18)
 game.board.play(:white, 10)
-
-puts game.board.get_point(0).to_s
-puts game.board.get_point(0).group.to_s
+puts game.board.get_point(10).group.to_s
+puts game.board.get_point(19).group.to_s

@@ -11,7 +11,7 @@ require 'Set'
 
 class Point
     
-    attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors, :liberty_of
+    attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors
     attr_accessor :will_kill, :ko_point, :group
     
     def initialize (location,board)
@@ -94,14 +94,17 @@ class Point
         "[" + @location.to_s + " : " + @color.to_s + "]"
     end
     
+    def liberty_of
+        lib_of = Array.new
+        (@neighbors - @open_neighbors).each{|i| lib_of.push(i.group).compact}
+        lib_of
+    end
+    
     protected
     
     def remove_open_neighbor (point)
         @open_neighbors.delete(point)
     end
     
-    def add_liberty_of (group)
-        group.liberties.add(self)
-        @liberty_of.add(group)
-    end
+    
 end
