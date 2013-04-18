@@ -31,11 +31,14 @@ class Go
 end
 
 game = Go.new(9)
-game.board.play(:black, 0)
-game.board.play(:white, 1)
-game.board.play(:black, 9)
-game.board.play(:white, 19)
-game.board.play(:black, 18)
-game.board.play(:white, 10)
-puts game.board.get_point(10).group.to_s
-puts game.board.get_point(19).group.to_s
+game.board.play(:black, 1)
+game.board.play(:white, 2)
+game.board.play(:black, 3)
+game.board.play(:white, 4)
+game.board.play(:black, 11)
+game.board.play(:white, 12)
+game.board.play(:black, 30)
+game.board.play(:white, 2)
+game.board.play(:black, 3)
+puts game.board.get_point(0).group
+puts game.board.get_point(0).to_s

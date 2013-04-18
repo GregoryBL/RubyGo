@@ -34,7 +34,7 @@ class Board
         
         nothing_killed = true
         point.will_kill.each {|i| if i[0] != color then nothing_killed = false end }
-            
+        old_ko = @ko_point ? self.ko_point.location : nil
         if color != turn
             raise "Not your turn"
         elsif point.color
@@ -44,8 +44,19 @@ class Board
         elsif point.ko_point
             raise "Illegal Move: Ko"
         else
-             point.add_stone(color)
+            puts "add_stone called at location: " + location.to_s
+            point.add_stone(color)
         end
+        puts "ko_point: " + @ko_point.to_s + " old_ko: " + old_ko.to_s
+        if (@ko_point && (@ko_point.location == old_ko))
+            @ko_point.remove_ko_point
+            set_ko(nil)
+        end
+        puts "ko_point: " + @ko_point.to_s + " old_ko: " + old_ko.to_s
         @turn = ((turn == :black) ? :white : :black)
-    end     
+    end
+    
+    def set_ko (kopoint)
+        @ko_point = kopoint
+    end
 end

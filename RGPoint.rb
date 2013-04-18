@@ -12,7 +12,7 @@ require 'Set'
 class Point
     
     attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors
-    attr_accessor :will_kill, :ko_point, :group
+    attr_accessor :will_kill, :ko_point, :group, :filled_neighbors
     
     def initialize (location,board)
         @board = board
@@ -24,7 +24,7 @@ class Point
         @bottom = nil
         @neighbors = nil
         @open_neighbors = nil
-        @liberty_of = Set.new #groups
+        @filled_neighbors = Set.new
         @group = nil
         @will_kill = Set.new
         @ko_point = false
@@ -50,24 +50,22 @@ class Point
         
         #test
         puts self.to_s + " is a liberty of:"
-        @liberty_of.each{|i| puts i}
+        @filled_neighbors.each{|i| puts i.group.to_s}
         
         #find any groups of the same color that are connected.
         @group = Group.new(self)
-        @liberty_of.each{|i|
+        @filled_neighbors.each{|i|
             if i.color == color
-                puts "connected " + i.to_s + " to " + @group.to_s
-                @group.combine_group(i, self)
+                puts "connected " + i.group.to_s + " to " + @group.to_s
+                @group.combine_group(i.group, self)
                 puts @group.to_s
             else
-                i.remove_liberty(self)
+                i.group.remove_liberty(self)
             end }
         
-        #tell open neighbors they are a liberty of this group
-        @open_neighbors.each{|i| i.add_liberty_of(@group)}
-        
         #tell neighbors this location is no longer an open neighbor
-        @neighbors.each{|i| i.remove_open_neighbor(self)}
+        @neighbors.each{|i| 
+            i.remove_open_neighbor(self)}
         
         #tests
         puts "color = " + color.to_s
@@ -79,8 +77,14 @@ class Point
     end
     
     def remove_stone
-        puts "remove_stone_called"
-        @neighbors.each{|i| i.open_neighbors.push(self)}
+        puts "remove_stone_called" + self.to_s
+        @neighbors.each{|i| 
+            i.open_neighbors.push(self)
+            i.filled_neighbors.delete(self) 
+        }
+        @filled_neighbors.each{|i|
+            i.group.add_liberty(self)
+        }
         if color == :black
             @board.white_captures += 1
         else
@@ -90,20 +94,24 @@ class Point
         @group = nil
     end
     
-    def to_s
-        "[" + @location.to_s + " : " + @color.to_s + "]"
+    def set_ko_point
+        @ko_point = true
+        @board.set_ko(self)
     end
     
-    def liberty_of
-        lib_of = Array.new
-        (@neighbors - @open_neighbors).each{|i| lib_of.push(i.group).compact}
-        lib_of
+    def remove_ko_point
+        @ko_point = false
+    end
+    
+    def to_s
+        "[" + @location.to_s + " : " + @color.to_s + "]"
     end
     
     protected
     
     def remove_open_neighbor (point)
         @open_neighbors.delete(point)
+        @filled_neighbors.add(point)
     end
     
     
