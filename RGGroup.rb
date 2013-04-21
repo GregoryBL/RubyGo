@@ -10,7 +10,8 @@ class Group
     
     attr_accessor :points, :liberties, :color
     
-    def initialize (point)
+    def initialize (point, board)
+        @board = board
         @color = point.color
         @points = Set.new << point
         @liberties = Set.new
@@ -64,7 +65,7 @@ class Group
     
     def add_liberty (point)
         if num_liberties == 1
-            puts "remove will kill " + self.to_s + "at: "
+            #puts "remove will kill " + self.to_s + "at: "
             @liberties.each{|i|
             i.will_kill.delete([color, self])
             }
@@ -75,9 +76,10 @@ class Group
     def remove_liberty (point)
         @liberties.delete(point)
         if num_liberties == 1
-            puts "set will kill" + self.to_s + " at:"
+            #puts "set will kill" + self.to_s + " at:"
             @liberties.each{|i| i.will_kill.add([color, self])
-                puts i.to_s}
+                #puts i.to_s
+            }
         end
     end
     

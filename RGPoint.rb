@@ -16,6 +16,7 @@ class Point
     
     def initialize (location,board)
         @board = board
+        @log = @board.log
         @location = location
         @color = nil # nil, :black, or :white
         @top = nil
@@ -49,16 +50,16 @@ class Point
         @will_kill = Set.new
         
         #test
-        puts self.to_s + " is a liberty of:"
-        @filled_neighbors.each{|i| puts i.group.to_s}
+        #puts self.to_s + " is a liberty of:"
+        #@filled_neighbors.each{|i| puts i.group.to_s}
         
         #find any groups of the same color that are connected.
-        @group = Group.new(self)
+        @group = Group.new(self, @board)
         @filled_neighbors.each{|i|
             if i.color == color
-                puts "connected " + i.group.to_s + " to " + @group.to_s
+                #puts "connected " + i.group.to_s + " to " + @group.to_s
                 @group.combine_group(i.group, self)
-                puts @group.to_s
+                #puts @group.to_s
             else
                 i.group.remove_liberty(self)
             end }
@@ -68,16 +69,16 @@ class Point
             i.remove_open_neighbor(self)}
         
         #tests
-        puts "color = " + color.to_s
-        puts "location = " + location.to_s
-        puts "neighbors = " + neighbors.inject(""){|string, i| string + i.to_s}
-        puts "open_neighbors = " + open_neighbors.inject(""){|string, i| string + i.to_s}
-        puts "group = " + group.to_s
-        puts ""
+        #puts "color = " + color.to_s
+        #puts "location = " + location.to_s
+        #puts "neighbors = " + neighbors.inject(""){|string, i| string + i.to_s}
+        #puts "open_neighbors = " + open_neighbors.inject(""){|string, i| string + i.to_s}
+        #puts "group = " + group.to_s
+        #puts ""
     end
     
     def remove_stone
-        puts "remove_stone_called" + self.to_s
+        @log.write("remove_stone_called" + self.to_s + "\n")
         @neighbors.each{|i| 
             i.open_neighbors.push(self)
             i.filled_neighbors.delete(self) 

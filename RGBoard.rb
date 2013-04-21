@@ -8,10 +8,11 @@
 
 class Board
     
-    attr_accessor :size, :ko_point, :turn, :white_captures, :black_captures
+    attr_accessor :size, :ko_point, :turn, :white_captures, :black_captures, :log
     
-    def initialize (size=19)
+    def initialize (size=19, log)
         @size = size
+        @log = log
         @board = Array.new(@size * @size) {|i| Point.new(i, self)}
         @turn = :black
         @groups = Array.new
@@ -38,22 +39,23 @@ class Board
         if color != turn
             raise "Not your turn"
         elsif point.color
-            raise "Illegal Move: Point occupied"
+            raise "Illegal Move: Point occupied" + location.to_s
         elsif point.open_neighbors.empty? && nothing_killed && result_liberties == 0
             raise "Illegal Move: Suicide"
         elsif point.ko_point
             raise "Illegal Move: Ko"
         else
-            puts "add_stone called at location: " + location.to_s
+            @log.write("add_stone called with color: " + color.to_s + "at location: " + location.to_s + "\n")
             point.add_stone(color)
         end
-        puts "ko_point: " + @ko_point.to_s + " old_ko: " + old_ko.to_s
+        @log.write("ko_point: " + @ko_point.to_s + " old_ko: " + old_ko.to_s + "\n")
         if (@ko_point && (@ko_point.location == old_ko))
             @ko_point.remove_ko_point
             set_ko(nil)
         end
-        puts "ko_point: " + @ko_point.to_s + " old_ko: " + old_ko.to_s
+        @log.write("ko_point: " + @ko_point.to_s + " old_ko: " + old_ko.to_s + "\n")
         @turn = ((turn == :black) ? :white : :black)
+        @log.write(@turn.to_s + "\n")
     end
     
     def set_ko (kopoint)

@@ -1,0 +1,174 @@
+add_stone called with color: blackat location: 20
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 47
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 40
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 30
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 49
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 25
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 42
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 62
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 23
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 36
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 37
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 4
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 27
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 55
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 45
+remove_stone_called[36 : white]
+ko_point: [36 : ] old_ko: 
+ko_point: [36 : ] old_ko: 
+white
+add_stone called with color: whiteat location: 9
+ko_point: [36 : ] old_ko: 36
+ko_point:  old_ko: 36
+black
+add_stone called with color: blackat location: 36
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 14
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 13
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 33
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 15
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 63
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 5
+remove_stone_called[14 : white]
+ko_point: [14 : ] old_ko: 
+ko_point: [14 : ] old_ko: 
+white
+add_stone called with color: whiteat location: 26
+ko_point: [14 : ] old_ko: 14
+ko_point:  old_ko: 14
+black
+add_stone called with color: blackat location: 3
+remove_stone_called[4 : white]
+ko_point: [4 : ] old_ko: 
+ko_point: [4 : ] old_ko: 
+white
+add_stone called with color: whiteat location: 8
+ko_point: [4 : ] old_ko: 4
+ko_point:  old_ko: 4
+black
+add_stone called with color: blackat location: 7
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 50
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 17
+remove_stone_called[8 : white]
+ko_point: [8 : ] old_ko: 
+ko_point: [8 : ] old_ko: 
+white
+add_stone called with color: whiteat location: 71
+ko_point: [8 : ] old_ko: 8
+ko_point:  old_ko: 8
+black
+add_stone called with color: blackat location: 16
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 32
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 24
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 60
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 34
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 10
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 41
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 29
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 31
+remove_stone_called[32 : white]
+remove_stone_called[33 : white]
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 33
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+add_stone called with color: blackat location: 32
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 75
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
