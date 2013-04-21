@@ -31,6 +31,13 @@ class Group
         if point.bottom && !point.bottom.color
             @liberties.add(point.bottom)
         end
+        
+        if num_liberties == 1
+            #puts "set will kill" + self.to_s + " at:"
+            @liberties.each{|i| i.will_kill.add([color, self])
+                #puts i.to_s
+            }
+        end
     end
     
     def num_liberties
