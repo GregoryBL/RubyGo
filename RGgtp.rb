@@ -15,4 +15,8 @@ class RGgtp
         
     end
     
+    def main_loop
+        while (status == )
+    end
+    
 end
