@@ -22,7 +22,13 @@ class Go
         @size = size
         @komi = 0
         @log = File.new("game_log.txt", "w")
-        @player = if player == "random" then RGRandomPlayer.new(self) end
+        if player == "random"
+            @player = RGRandomPlayer.new(self) 
+        elsif player = "Player1"
+            @player = Player1.new(self)
+        else
+            raise "Error: not a real player"
+        end
         
         set_board
         @gtp = RGgtp.new(self, @player)
