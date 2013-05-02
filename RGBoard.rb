@@ -25,7 +25,60 @@ class Board
         @board[location]
     end
     
-    def play (color, location)
+    def set_handicap (handicap)
+        max_handicap = 0
+        dist_from_wall = 0
+        
+        if (@size % 2) == 1
+            if @size < 6
+                max_handicap = 0
+            elsif @size < 8
+                max_handicap = 4
+            else
+                max_handicap = 9
+            end
+        else
+            if @size > 7
+                max_handicap = 4
+            else
+                max_handicap = 0
+            end
+        end
+        
+        if @size < 14
+            dist_from_wall = 3
+        else
+            dist_from_wall = 4
+        end
+        
+        emp_below = @size * (dist_from_wall - 1)
+        num_pos = @size * @size - 1
+        half = num_pos / 2
+        
+        handicap_positions = [
+            emp_below + dist_from_wall - 1,
+            num_pos - (emp_below + dist_from_wall - 1),
+            emp_below + @size - dist_from_wall - 1,
+            num_pos - (emp_below + @size - dist_from_wall - 1),
+        ]
+        if max_handicap > 4
+            handicap_positions.push(emp_below + @size.div(2) + 1, num_pos - (emp_below + @size.div(2), half - @size.div(2) + dist_from_wall, half + @size.div(2) - dist_from_wall)
+        end
+        
+        handicap_positions = handicap_positions.reverse
+        
+        if handicap > 4 && (handicap % 2) = 1
+            self.play(:black, half + 1, true)
+            handicap -= 1
+        end
+        
+        handicap.times {|i|
+            self.play(:black, handicap_positions.pop, true)
+        }
+        @turn = :white
+    end
+    
+    def play (color, location, handicap=false)
         point = get_point(location)
 
         result_liberties = 0
@@ -54,8 +107,10 @@ class Board
             set_ko(nil)
         end
         @log.write("ko_point: " + @ko_point.to_s + " old_ko: " + old_ko.to_s + "\n")
-        @turn = ((turn == :black) ? :white : :black)
-        @log.write(@turn.to_s + "\n")
+        if !handicap
+            @turn = ((turn == :black) ? :white : :black)
+            @log.write(@turn.to_s + "\n")
+        end
     end
     
     def set_ko (kopoint)
