@@ -24,7 +24,7 @@ class Go
         @log = File.new("game_log.txt", "w")
         if player == "random"
             @player = RGRandomPlayer.new(self) 
-        elsif player = "Player1"
+        elsif player == "Player1"
             @player = Player1.new(self)
         else
             raise "Error: not a real player"

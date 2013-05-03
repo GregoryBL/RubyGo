@@ -62,12 +62,12 @@ class Board
             num_pos - (emp_below + @size - dist_from_wall - 1),
         ]
         if max_handicap > 4
-            handicap_positions.push(emp_below + @size.div(2) + 1, num_pos - (emp_below + @size.div(2), half - @size.div(2) + dist_from_wall, half + @size.div(2) - dist_from_wall)
+            handicap_positions.push(emp_below + @size.div(2) + 1, num_pos - (emp_below + @size.div(2)), half - @size.div(2) + dist_from_wall, half + @size.div(2) - dist_from_wall)
         end
         
         handicap_positions = handicap_positions.reverse
         
-        if handicap > 4 && (handicap % 2) = 1
+        if handicap > 4 && (handicap % 2) == 1
             self.play(:black, half + 1, true)
             handicap -= 1
         end
