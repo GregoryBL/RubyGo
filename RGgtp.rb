@@ -80,7 +80,8 @@ class RGgtp
                 column = @cols.index(i) + 1
             end 
         }
-        row = (human[1].to_i)
+        human.slice!(0)
+        row = human.to_i
         computer = (((row - 1) * @game.size - 1) + column)
         return computer
     end
