@@ -1,0 +1,52 @@
+GTP_INPUT>list_commands
+= boardsize
+clear_board
+genmove
+known_command
+komi
+list_commands
+name
+place_free_handicap
+play
+protocol_version
+quit
+set_free_handicap
+version
+
+GTP_INPUT>name
+= RubyGo
+
+GTP_INPUT>version
+= 0.0.1
+
+GTP_INPUT>boardsize 19
+= 19
+
+GTP_INPUT>clear_board
+= #<Board:0x007fc1bb13bd28>
+
+GTP_INPUT>komi 6.5
+= 6.5
+
+GTP_INPUT>set_free_handicap d16 k16 q16 d10 k10 q10 d4 k4 q4
+= true
+
+GTP_INPUT>play w r16
+= 12
+
+GTP_INPUT>play b n4
+= 11
+
+GTP_INPUT>time_left b 1799 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w q17
+= 12
+
+GTP_INPUT>play b j12
+= 12
+
+GTP_INPUT>time_left b 1799 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w q15

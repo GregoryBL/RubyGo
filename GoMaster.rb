@@ -17,7 +17,7 @@ class Go
     
     attr_accessor :board, :gtp, :komi, :size, :player, :log
     
-    def initialize (size=9, player="random")
+    def initialize (size=19, player="random")
         #@root = GoRoot.new(size)
         @size = size
         @komi = 0

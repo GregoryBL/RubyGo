@@ -37,6 +37,8 @@ class RGgtp
     def gtp_play (*move)
         color = self.color_p_for_gtp(move[0])
         @game.board.play(color, self.computer_for_human(move[1]))
+        @game.board.log.write(self.computer_for_human(move[1]).to_s + "\n")
+        @game.board.log.write(move.to_s)
     end
     
     def gtp_genmove (color)
@@ -44,6 +46,15 @@ class RGgtp
         move = @game.player.genmove(p_color)
         human = human_for_computer(move)
         return human
+    end
+    
+    def gtp_set_free_handicap (*stones)
+        @game.board.set_handicap(stones.length)
+        true
+    end
+    
+    def gtp_place_free_handicap
+        puts "gtp_place_free_handicap"
     end
     
     def color_p_for_gtp (gtp_color)
@@ -66,17 +77,17 @@ class RGgtp
         column = 0
         @cols.each{|i| 
             if i == human[0]
-                column = @cols.index(i)
+                column = @cols.index(i) + 1
             end 
         }
-        row = (human[1].to_i - 1)
-        computer = ((row * @game.size) + column)
+        row = (human[1].to_i)
+        computer = (((row - 1) * @game.size - 1) + column)
         return computer
     end
     
     def human_for_computer (computer)
         row = computer.divmod(@game.size)[0] + 1
-        column = computer.divmod(@game.size)[1]
+        column = computer.divmod(@game.size)[1] + 1
         human = @cols[column] + row.to_s
         return human
     end

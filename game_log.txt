@@ -1,0 +1,48 @@
+add_stone called with color: blackat location: 181
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 60
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 300
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 71
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 289
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 67
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 294
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 175
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: blackat location: 185
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+add_stone called with color: whiteat location: 16
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+16
+["w", "r16"]add_stone called with color: blackat location: 69
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+69
+["b", "n4"]add_stone called with color: whiteat location: 15
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+15
+["w", "q17"]add_stone called with color: blackat location: 8
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+8
+["b", "j12"]
