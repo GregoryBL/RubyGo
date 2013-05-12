@@ -1,48 +1,1037 @@
-add_stone called with color: blackat location: 181
-ko_point:  old_ko: 
-ko_point:  old_ko: 
 add_stone called with color: blackat location: 60
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 add_stone called with color: blackat location: 300
 ko_point:  old_ko: 
 ko_point:  old_ko: 
-add_stone called with color: blackat location: 71
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-add_stone called with color: blackat location: 289
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-add_stone called with color: blackat location: 67
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-add_stone called with color: blackat location: 294
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-add_stone called with color: blackat location: 175
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-add_stone called with color: blackat location: 185
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-add_stone called with color: whiteat location: 16
+add_stone called with color: whiteat location: 62
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 black
-16
-["w", "r16"]add_stone called with color: blackat location: 69
+-20
+["w", ""]add_stone called with color: blackat location: 261
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
-69
-["b", "n4"]add_stone called with color: whiteat location: 15
+56
+["b", "4"]add_stone called with color: whiteat location: 164
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 black
-15
-["w", "q17"]add_stone called with color: blackat location: 8
+-20
+["w", ""]add_stone called with color: blackat location: 120
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
-8
-["b", "j12"]
+-20
+["b", ""]add_stone called with color: whiteat location: 219
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 280
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+75
+["b", "5"]add_stone called with color: whiteat location: 171
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 281
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+75
+["b", "5"]add_stone called with color: whiteat location: 252
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 93
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 178
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 113
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 104
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 2
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 88
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 215
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+18
+["b", "2"]add_stone called with color: whiteat location: 147
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 56
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 239
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+37
+["w", "3"]add_stone called with color: blackat location: 141
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 294
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+94
+["w", "6"]add_stone called with color: blackat location: 15
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 307
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 1
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 65
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 92
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]add_stone called with color: whiteat location: 174
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 283
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+75
+["b", "5"]add_stone called with color: whiteat location: 249
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 214
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 254
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 143
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 217
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 81
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 256
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 228
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 292
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+94
+["w", "6"]add_stone called with color: blackat location: 267
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 328
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+132
+["w", "8"]add_stone called with color: blackat location: 102
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 270
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+75
+["w", "5"]add_stone called with color: blackat location: 80
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 212
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 12
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 176
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 73
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 185
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 352
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 226
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 158
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 224
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 89
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 278
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+75
+["w", "5"]add_stone called with color: blackat location: 213
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 336
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+132
+["w", "8"]add_stone called with color: blackat location: 69
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 320
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 126
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 338
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+132
+["w", "8"]add_stone called with color: blackat location: 123
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 29
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 186
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 25
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 75
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 115
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 135
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 118
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 210
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 97
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 142
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 40
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 86
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 24
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 200
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 67
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 255
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 202
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-1
+["w", "1"]add_stone called with color: blackat location: 209
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 222
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 344
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 331
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+132
+["w", "8"]add_stone called with color: blackat location: 101
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 290
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+94
+["w", "6"]add_stone called with color: blackat location: 265
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 305
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 241
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 314
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 22
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 315
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 268
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 298
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+94
+["w", "6"]add_stone called with color: blackat location: 351
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 332
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+132
+["w", "8"]add_stone called with color: blackat location: 131
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 333
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+132
+["w", "8"]add_stone called with color: blackat location: 194
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 353
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+151
+["w", "9"]add_stone called with color: blackat location: 100
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 350
+remove_stone_called[351 : black]
+remove_stone_called[352 : black]
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+151
+["w", "9"]add_stone called with color: blackat location: 311
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 351
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+151
+["w", "9"]add_stone called with color: blackat location: 190
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 352
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+151
+["w", "9"]add_stone called with color: blackat location: 44
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 312
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 308
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 293
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+94
+["w", "6"]add_stone called with color: blackat location: 225
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 310
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 318
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 330
+remove_stone_called[311 : black]
+ko_point: [311 : ] old_ko: 
+ko_point: [311 : ] old_ko: 
+black
+132
+["w", "8"]add_stone called with color: blackat location: 348
+ko_point: [311 : ] old_ko: 311
+ko_point:  old_ko: 311
+white
+add_stone called with color: whiteat location: 311
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+113
+["w", "7"]add_stone called with color: blackat location: 47
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 291
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+94
+["w", "6"]add_stone called with color: blackat location: 14
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 272
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+75
+["w", "5"]add_stone called with color: blackat location: 282
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 273
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+75
+["w", "5"]add_stone called with color: blackat location: 13
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 274
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+75
+["w", "5"]add_stone called with color: blackat location: 36
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 275
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+75
+["w", "5"]add_stone called with color: blackat location: 18
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 236
+remove_stone_called[255 : black]
+ko_point: [255 : ] old_ko: 
+ko_point: [255 : ] old_ko: 
+black
+37
+["w", "3"]add_stone called with color: blackat location: 296
+ko_point: [255 : ] old_ko: 255
+ko_point:  old_ko: 255
+white
+add_stone called with color: whiteat location: 237
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+37
+["w", "3"]add_stone called with color: blackat location: 340
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 235
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+37
+["w", "3"]add_stone called with color: blackat location: 129
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 255
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 130
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 295
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+94
+["w", "6"]add_stone called with color: blackat location: 199
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 257
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 134
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 258
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 208
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 220
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 48
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 201
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-1
+["w", "1"]add_stone called with color: blackat location: 70
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 221
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+18
+["w", "2"]add_stone called with color: blackat location: 68
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 240
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+37
+["w", "3"]add_stone called with color: blackat location: 187
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 242
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+37
+["w", "3"]add_stone called with color: blackat location: 50
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 260
+remove_stone_called[241 : black]
+ko_point: [241 : ] old_ko: 
+ko_point: [241 : ] old_ko: 
+black
+56
+["w", "4"]add_stone called with color: blackat location: 122
+ko_point: [241 : ] old_ko: 241
+ko_point:  old_ko: 241
+white
+add_stone called with color: whiteat location: 160
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 150
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 140
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 317
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 139
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 116
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 138
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 33
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 119
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 162
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 98
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 3
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 99
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 5
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 79
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 32
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 61
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 354
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 63
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 161
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 82
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 223
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 83
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 203
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 84
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 58
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 103
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 9
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 124
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 31
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 144
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 110
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 163
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 105
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 182
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 323
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 181
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 28
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 180
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 39
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 121
+remove_stone_called[100 : black]
+remove_stone_called[80 : black]
+remove_stone_called[81 : black]
+remove_stone_called[101 : black]
+remove_stone_called[120 : black]
+remove_stone_called[102 : black]
+remove_stone_called[161 : black]
+remove_stone_called[162 : black]
+remove_stone_called[122 : black]
+remove_stone_called[142 : black]
+remove_stone_called[141 : black]
+remove_stone_called[143 : black]
+remove_stone_called[123 : black]
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 42
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 101
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 46
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 102
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 53
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 100
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 133
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 81
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 192
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 80
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 191
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 120
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 345
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 122
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 112
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 123
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 322
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 141
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 34
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 142
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 266
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 143
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 76
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 162
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 284
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 161
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", ""]add_stone called with color: blackat location: 127
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 179
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-20
+["w", "0"]add_stone called with color: blackat location: 21
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+add_stone called with color: whiteat location: 198
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+-1
+["w", "1"]add_stone called with color: blackat location: 245
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white

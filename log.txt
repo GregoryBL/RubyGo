@@ -23,30 +23,1010 @@ GTP_INPUT>boardsize 19
 = 19
 
 GTP_INPUT>clear_board
-= #<Board:0x007fc1bb13bd28>
+= #<Board:0x007f822a8b11a0>
 
 GTP_INPUT>komi 6.5
 = 6.5
 
-GTP_INPUT>set_free_handicap d16 k16 q16 d10 k10 q10 d4 k4 q4
+GTP_INPUT>set_free_handicap q16 d4
 = true
 
-GTP_INPUT>play w r16
-= 12
+GTP_INPUT>play w f4
+= 9
 
-GTP_INPUT>play b n4
-= 11
-
-GTP_INPUT>time_left b 1799 0
-? Command not implemented: time_left
-
-GTP_INPUT>play w q17
-= 12
-
-GTP_INPUT>play b j12
-= 12
+GTP_INPUT>play b p14
+= 10
 
 GTP_INPUT>time_left b 1799 0
 ? Command not implemented: time_left
 
-GTP_INPUT>play w q15
+GTP_INPUT>play w n9
+= 9
+
+GTP_INPUT>play b g7
+= 9
+
+GTP_INPUT>time_left b 1799 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l12
+= 10
+
+GTP_INPUT>play b p15
+= 10
+
+GTP_INPUT>time_left b 1798 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w a10
+= 10
+
+GTP_INPUT>play b q15
+= 10
+
+GTP_INPUT>time_left b 1798 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f14
+= 10
+
+GTP_INPUT>play b s5
+= 9
+
+GTP_INPUT>time_left b 1798 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h10
+= 10
+
+GTP_INPUT>play b t6
+= 9
+
+GTP_INPUT>time_left b 1798 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k6
+= 9
+
+GTP_INPUT>play b c1
+= 9
+
+GTP_INPUT>time_left b 1798 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w n5
+= 9
+
+GTP_INPUT>play b g12
+= 10
+
+GTP_INPUT>time_left b 1798 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w p8
+= 9
+
+GTP_INPUT>play b t3
+= 9
+
+GTP_INPUT>time_left b 1798 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m13
+= 10
+
+GTP_INPUT>play b j8
+= 9
+
+GTP_INPUT>time_left b 1797 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k16
+= 10
+
+GTP_INPUT>play b q1
+= 9
+
+GTP_INPUT>time_left b 1797 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w d17
+= 10
+
+GTP_INPUT>play b b1
+= 9
+
+GTP_INPUT>time_left b 1797 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j4
+= 9
+
+GTP_INPUT>play b r5
+= 9
+
+GTP_INPUT>time_left b 1797 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w d10
+= 10
+
+GTP_INPUT>play b s15
+= 10
+
+GTP_INPUT>time_left b 1797 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w c14
+= 10
+
+GTP_INPUT>genmove b
+= f12
+
+GTP_INPUT>time_left b 1796 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h14
+= 10
+
+GTP_INPUT>genmove b
+= l8
+
+GTP_INPUT>time_left b 1796 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j12
+= 10
+
+GTP_INPUT>genmove b
+= f5
+
+GTP_INPUT>time_left b 1796 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k14
+= 10
+
+GTP_INPUT>genmove b
+= a13
+
+GTP_INPUT>time_left b 1796 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h16
+= 10
+
+GTP_INPUT>genmove b
+= b15
+
+GTP_INPUT>time_left b 1795 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f18
+= 10
+
+GTP_INPUT>genmove b
+= h6
+
+GTP_INPUT>time_left b 1795 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w e15
+= 10
+
+GTP_INPUT>genmove b
+= e5
+
+GTP_INPUT>time_left b 1795 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w d12
+= 10
+
+GTP_INPUT>genmove b
+= n1
+
+GTP_INPUT>time_left b 1795 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f10
+= 10
+
+GTP_INPUT>genmove b
+= r4
+
+GTP_INPUT>time_left b 1795 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w p10
+= 10
+
+GTP_INPUT>genmove b
+= l19
+
+GTP_INPUT>time_left b 1794 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w s12
+= 10
+
+GTP_INPUT>genmove b
+= g9
+
+GTP_INPUT>time_left b 1794 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w q12
+= 10
+
+GTP_INPUT>genmove b
+= o5
+
+GTP_INPUT>time_left b 1794 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w n15
+= 10
+
+GTP_INPUT>genmove b
+= e12
+
+GTP_INPUT>time_left b 1794 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w o18
+= 10
+
+GTP_INPUT>genmove b
+= n4
+
+GTP_INPUT>time_left b 1794 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w r17
+= 10
+
+GTP_INPUT>genmove b
+= n7
+
+GTP_INPUT>time_left b 1794 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w q18
+= 10
+
+GTP_INPUT>genmove b
+= k7
+
+GTP_INPUT>time_left b 1793 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l2
+= 9
+
+GTP_INPUT>genmove b
+= q10
+
+GTP_INPUT>time_left b 1793 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g2
+= 9
+
+GTP_INPUT>genmove b
+= t4
+
+GTP_INPUT>time_left b 1793 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w b7
+= 9
+
+GTP_INPUT>genmove b
+= c8
+
+GTP_INPUT>time_left b 1792 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w e7
+= 9
+
+GTP_INPUT>genmove b
+= b12
+
+GTP_INPUT>time_left b 1792 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w c6
+= 9
+
+GTP_INPUT>genmove b
+= k8
+
+GTP_INPUT>time_left b 1792 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w c3
+= 9
+
+GTP_INPUT>genmove b
+= l5
+
+GTP_INPUT>time_left b 1792 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f2
+= 9
+
+GTP_INPUT>genmove b
+= l11
+
+GTP_INPUT>time_left b 1791 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l4
+= 9
+
+GTP_INPUT>genmove b
+= j14
+
+GTP_INPUT>time_left b 1791 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w n11
+= 10
+
+GTP_INPUT>genmove b
+= a12
+
+GTP_INPUT>time_left b 1791 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w o12
+= 10
+
+GTP_INPUT>genmove b
+= c19
+
+GTP_INPUT>time_left b 1791 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j18
+= 10
+
+GTP_INPUT>genmove b
+= g6
+
+GTP_INPUT>time_left b 1791 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f16
+= 10
+
+GTP_INPUT>genmove b
+= t14
+
+GTP_INPUT>time_left b 1791 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w b17
+= 10
+
+GTP_INPUT>genmove b
+= o13
+
+GTP_INPUT>time_left b 1791 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l17
+= 10
+
+GTP_INPUT>genmove b
+= d2
+
+GTP_INPUT>time_left b 1790 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m17
+= 10
+
+GTP_INPUT>genmove b
+= c15
+
+GTP_INPUT>time_left b 1790 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w o16
+= 10
+
+GTP_INPUT>genmove b
+= k19
+
+GTP_INPUT>time_left b 1790 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k18
+= 10
+
+GTP_INPUT>genmove b
+= s7
+
+GTP_INPUT>time_left b 1790 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l18
+= 10
+
+GTP_INPUT>genmove b
+= e11
+
+GTP_INPUT>time_left b 1789 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m19
+= 10
+
+GTP_INPUT>genmove b
+= f6
+
+GTP_INPUT>time_left b 1789 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j19
+= 10
+
+GTP_INPUT>genmove b
+= h17
+
+GTP_INPUT>time_left b 1789 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k19
+= 10
+
+GTP_INPUT>genmove b
+= a11
+
+GTP_INPUT>time_left b 1789 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l19
+= 10
+
+GTP_INPUT>genmove b
+= g3
+
+GTP_INPUT>time_left b 1788 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j17
+= 10
+
+GTP_INPUT>genmove b
+= e17
+
+GTP_INPUT>time_left b 1788 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j16
+= 10
+
+GTP_INPUT>genmove b
+= r12
+
+GTP_INPUT>time_left b 1788 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g17
+= 10
+
+GTP_INPUT>genmove b
+= p17
+
+GTP_INPUT>time_left b 1788 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h18
+= 10
+
+GTP_INPUT>genmove b
+= g19
+
+GTP_INPUT>time_left b 1787 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h17
+= 10
+
+GTP_INPUT>genmove b
+= k3
+
+GTP_INPUT>time_left b 1787 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g16
+= 10
+
+GTP_INPUT>genmove b
+= p1
+
+GTP_INPUT>time_left b 1787 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g15
+= 10
+
+GTP_INPUT>genmove b
+= r15
+
+GTP_INPUT>time_left b 1787 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h15
+= 10
+
+GTP_INPUT>genmove b
+= o1
+
+GTP_INPUT>time_left b 1787 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j15
+= 10
+
+GTP_INPUT>genmove b
+= s2
+
+GTP_INPUT>time_left b 1786 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k15
+= 10
+
+GTP_INPUT>genmove b
+= t1
+
+GTP_INPUT>time_left b 1786 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j13
+= 10
+
+GTP_INPUT>genmove b
+= m16
+
+GTP_INPUT>time_left b 1786 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k13
+= 10
+
+GTP_INPUT>genmove b
+= s18
+
+GTP_INPUT>time_left b 1786 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h13
+= 10
+
+GTP_INPUT>genmove b
+= q7
+
+GTP_INPUT>time_left b 1786 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j14
+= 10
+
+GTP_INPUT>genmove b
+= r7
+
+GTP_INPUT>time_left b 1785 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l16
+= 10
+
+GTP_INPUT>genmove b
+= k11
+
+GTP_INPUT>time_left b 1785 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l14
+= 10
+
+GTP_INPUT>genmove b
+= b8
+
+GTP_INPUT>time_left b 1785 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m14
+= 10
+
+GTP_INPUT>genmove b
+= t11
+
+GTP_INPUT>time_left b 1785 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m12
+= 10
+
+GTP_INPUT>genmove b
+= l3
+
+GTP_INPUT>time_left b 1784 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m11
+= 10
+
+GTP_INPUT>genmove b
+= o4
+
+GTP_INPUT>time_left b 1784 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w n12
+= 10
+
+GTP_INPUT>genmove b
+= m4
+
+GTP_INPUT>time_left b 1784 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w n13
+= 10
+
+GTP_INPUT>genmove b
+= r10
+
+GTP_INPUT>time_left b 1784 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w p13
+= 10
+
+GTP_INPUT>genmove b
+= n3
+
+GTP_INPUT>time_left b 1783 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w o14
+= 10
+
+GTP_INPUT>genmove b
+= j7
+
+GTP_INPUT>time_left b 1783 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j9
+= 9
+
+GTP_INPUT>genmove b
+= s8
+
+GTP_INPUT>time_left b 1783 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h8
+= 9
+
+GTP_INPUT>genmove b
+= o17
+
+GTP_INPUT>time_left b 1783 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g8
+= 9
+
+GTP_INPUT>genmove b
+= c7
+
+GTP_INPUT>time_left b 1783 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f8
+= 9
+
+GTP_INPUT>genmove b
+= p2
+
+GTP_INPUT>time_left b 1783 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f7
+= 9
+
+GTP_INPUT>genmove b
+= l9
+
+GTP_INPUT>time_left b 1782 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w d6
+= 9
+
+GTP_INPUT>genmove b
+= d1
+
+GTP_INPUT>time_left b 1782 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w e6
+= 9
+
+GTP_INPUT>genmove b
+= f1
+
+GTP_INPUT>time_left b 1782 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w d5
+= 9
+
+GTP_INPUT>genmove b
+= o2
+
+GTP_INPUT>time_left b 1782 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w e4
+= 9
+
+GTP_INPUT>genmove b
+= n19
+
+GTP_INPUT>time_left b 1782 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g4
+= 9
+
+GTP_INPUT>genmove b
+= k9
+
+GTP_INPUT>time_left b 1781 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g5
+= 9
+
+GTP_INPUT>genmove b
+= p12
+
+GTP_INPUT>time_left b 1781 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h5
+= 9
+
+GTP_INPUT>genmove b
+= o11
+
+GTP_INPUT>time_left b 1781 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j5
+= 9
+
+GTP_INPUT>genmove b
+= b4
+
+GTP_INPUT>time_left b 1781 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j6
+= 9
+
+GTP_INPUT>genmove b
+= k1
+
+GTP_INPUT>time_left b 1780 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l7
+= 9
+
+GTP_INPUT>genmove b
+= n2
+
+GTP_INPUT>time_left b 1780 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m8
+= 9
+
+GTP_INPUT>genmove b
+= q6
+
+GTP_INPUT>time_left b 1780 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m9
+= 9
+
+GTP_INPUT>genmove b
+= l6
+
+GTP_INPUT>time_left b 1780 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w m10
+= 10
+
+GTP_INPUT>genmove b
+= a18
+
+GTP_INPUT>time_left b 1780 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l10
+= 10
+
+GTP_INPUT>genmove b
+= k2
+
+GTP_INPUT>time_left b 1780 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k10
+= 10
+
+GTP_INPUT>genmove b
+= b3
+
+GTP_INPUT>time_left b 1780 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h7
+= 9
+
+GTP_INPUT>genmove b
+= e3
+
+GTP_INPUT>time_left b 1779 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g6
+= 9
+
+GTP_INPUT>genmove b
+= j3
+
+GTP_INPUT>time_left b 1779 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w h6
+= 9
+
+GTP_INPUT>genmove b
+= q3
+
+GTP_INPUT>time_left b 1779 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f6
+= 9
+
+GTP_INPUT>genmove b
+= a8
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w f5
+= 9
+
+GTP_INPUT>genmove b
+= c11
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w e5
+= 9
+
+GTP_INPUT>genmove b
+= b11
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w g7
+= 9
+
+GTP_INPUT>genmove b
+= d19
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j7
+= 9
+
+GTP_INPUT>genmove b
+= s6
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k7
+= 9
+
+GTP_INPUT>genmove b
+= t17
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j8
+= 9
+
+GTP_INPUT>genmove b
+= q2
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k8
+= 9
+
+GTP_INPUT>genmove b
+= a15
+
+GTP_INPUT>time_left b 1778 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l8
+= 9
+
+GTP_INPUT>genmove b
+= a5
+
+GTP_INPUT>time_left b 1777 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w l9
+= 9
+
+GTP_INPUT>genmove b
+= t15
+
+GTP_INPUT>time_left b 1777 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w k9
+= 9
+
+GTP_INPUT>genmove b
+= o7
+
+GTP_INPUT>time_left b 1777 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j10
+= 10
+
+GTP_INPUT>genmove b
+= c2
+
+GTP_INPUT>time_left b 1777 0
+? Command not implemented: time_left
+
+GTP_INPUT>play w j11
+= 10
+
+GTP_INPUT>genmove b
+= s13
+
+GTP_INPUT>time_left b 1777 0
+? Command not implemented: time_left
+

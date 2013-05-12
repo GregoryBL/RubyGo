@@ -88,7 +88,7 @@ class RGgtp
     
     def human_for_computer (computer)
         row = computer.divmod(@game.size)[0] + 1
-        column = computer.divmod(@game.size)[1] + 1
+        column = computer.divmod(@game.size)[1]
         human = @cols[column] + row.to_s
         return human
     end
