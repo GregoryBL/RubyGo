@@ -2,24 +2,19 @@
 # RGRandomPlayer.rb
 #
 # Plays random points
+require_relative "RGPlayer.rb"
 
-class RGRandomPlayer
+class RGRandomPlayer < RGPlayer
     def initialize(game)
-        @game = game
+        super
         @random = Random.new
-        @size = @game.size
-        @color
-    end
-    
-    def change_size(size)
-        @size = size
     end
     
     def genmove(color)
         newrand = @random.rand(@size * @size)
         
-        if !@game.board.get_point(newrand).color && !@game.board.get_point(newrand).open_neighbors.empty?
-            @game.board.play(color, newrand)
+        if !@board.get_point(newrand).color && !@board.get_point(newrand).open_neighbors.empty?
+            @board.play(color, newrand)
             return newrand
         else
             return self.genmove(color)

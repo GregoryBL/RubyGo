@@ -4,10 +4,9 @@
 
 class Player1 < RGPlayer
     
-    def initialize (game)
-        super
+    def generate_move
         
-    end
+    end 
     
 end
         

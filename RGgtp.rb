@@ -27,18 +27,19 @@ class RGgtp
     end
     
     def gtp_clear_board
-        @game.set_board
+        @game.player.set_board
     end
     
     def gtp_komi (new_komi)
-        @game.komi = new_komi
+        @game.player.komi = new_komi
     end
     
     def gtp_play (*move)
         color = self.color_p_for_gtp(move[0])
-        @game.board.play(color, self.computer_for_human(move[1]))
-        @game.board.log.write(self.computer_for_human(move[1]).to_s + "\n")
-        @game.board.log.write(move.to_s)
+        @game.player.board.play(color, self.computer_for_human(move[1]))
+        @game.player.board.log.write(self.computer_for_human(move[1]).to_s + "\n")
+        @game.player.board.log.write(move.to_s)
+        true
     end
     
     def gtp_genmove (color)
@@ -49,12 +50,17 @@ class RGgtp
     end
     
     def gtp_set_free_handicap (*stones)
-        @game.board.set_handicap(stones.length)
+        @game.player.board.set_handicap(stones.length)
         true
     end
     
     def gtp_place_free_handicap
         puts "gtp_place_free_handicap"
+    end
+    
+    def gtp_time_left (color, seconds, stones)
+       @game.player.board.log.write("Time Left: " + seconds + " for " + stones + " stones. \n")
+       true
     end
     
     def color_p_for_gtp (gtp_color)
@@ -82,13 +88,13 @@ class RGgtp
         }
         human.slice!(0)
         row = human.to_i
-        computer = (((row - 1) * @game.size - 1) + column)
+        computer = (((row - 1) * @game.player.size - 1) + column)
         return computer
     end
     
     def human_for_computer (computer)
-        row = computer.divmod(@game.size)[0] + 1
-        column = computer.divmod(@game.size)[1]
+        row = computer.divmod(@game.player.size)[0] + 1
+        column = computer.divmod(@game.player.size)[1]
         human = @cols[column] + row.to_s
         return human
     end

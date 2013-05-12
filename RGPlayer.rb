@@ -4,22 +4,35 @@
 # Abstract player class
 
 class RGPlayer
-    def initialize(game)
+    
+    attr_accessor :komi, :size, :board
+    
+    def initialize(game, size=19)
         @game = game
-        @board = @game.board
-        @size = @game.size
+        @size = size
         @color = nil
+        @komi = 0
+        @log = File.new("game_log.txt", "w")
+        
+        set_board
+        
+    end
+    
+    def set_board
+        @board = Board.new(@size, @log)
     end
     
     def change_size(size)
         @size = size
+        set_board
     end
     
     def genmove(color)
         if !@color
             @color = color
         end
-        # Fill with move generation
+        
+        self.generate_move
         
         move = nil
         
