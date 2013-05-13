@@ -11,7 +11,7 @@ require 'Set'
 
 class Point
     
-    attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors
+    attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors, :row, :column
     attr_accessor :will_kill, :ko_point, :group, :filled_neighbors
     
     def initialize (location,board)
@@ -29,14 +29,16 @@ class Point
         @group = nil
         @will_kill = Set.new
         @ko_point = false
+        @row = location.divmod(@board.size)[0] + 1 # 1 to @size
+        @column = location.divmod(@board.size)[1] + 1 # 1 to @size
     end
     
     def init_neighbors
         b_s = @board.size
-        @top = location.divmod(b_s)[0] < (b_s - 1) ? @board.get_point(location + b_s) : nil
-        @left = location.divmod(b_s)[1] != 0 ? @board.get_point(@location - 1) : nil
-        @right = location.divmod(b_s)[1] != (b_s - 1) ? @board.get_point(@location + 1) : nil
-        @bottom = location.divmod(b_s)[0] > 0 ? @board.get_point(@location - b_s) : nil
+        @top = self.row < b_s ? @board.get_point(location + b_s) : nil
+        @left = self.column != 1 ? @board.get_point(@location - 1) : nil
+        @right = self.column != b_s ? @board.get_point(@location + 1) : nil
+        @bottom = self.row > 1 ? @board.get_point(@location - b_s) : nil
         @neighbors = [@top, @right, @bottom, @left].keep_if {|i| i }
         @open_neighbors = [@top, @right, @bottom, @left].keep_if {|i| i }
     end

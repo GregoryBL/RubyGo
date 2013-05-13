@@ -1,0 +1,22 @@
+GTP_INPUT>list_commands
+= boardsize
+clear_board
+genmove
+known_command
+komi
+list_commands
+name
+place_free_handicap
+play
+protocol_version
+quit
+set_free_handicap
+time_left
+version
+
+GTP_INPUT>name
+= RubyGo
+
+GTP_INPUT>version
+= 0.0.1
+
