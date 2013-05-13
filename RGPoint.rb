@@ -11,11 +11,13 @@ require 'Set'
 
 class Point
     
-    attr_reader :location, :color, :top, :left, :right, :bottom, :neighbors, :open_neighbors, :row, :column
+    attr_reader :location, :color, :neighbors, :open_neighbors, :row, :column
     attr_accessor :will_kill, :ko_point, :group, :filled_neighbors
+    attr_accessor :cdr, :cdl, :osd, :osl, :kld, :klu, :kdr, :kdl, :lkld, :lklu, :lkdr, :lkdl
     
     def initialize (location,board)
         @board = board
+        @size = @board.size
         @log = @board.log
         @location = location
         @color = nil # nil, :black, or :white
@@ -31,16 +33,97 @@ class Point
         @ko_point = false
         @row = location.divmod(@board.size)[0] + 1 # 1 to @size
         @column = location.divmod(@board.size)[1] + 1 # 1 to @size
+        @cdr = nil
+        @cdl = nil
+        @osd = nil
+        @osl = nil
+        @kld = nil
+        @klu = nil
+        @kdr = nil
+        @kdl = nil
+        @tsl = nil
+        @tsd = nil
+        @lkld = nil
+        @lklu = nil
+        @lkdr = nil
+        @lkdl = nil
     end
     
     def init_neighbors
-        b_s = @board.size
-        @top = self.row < b_s ? @board.get_point(location + b_s) : nil
+        @top = self.row < @size ? @board.get_point(location + @size) : nil
         @left = self.column != 1 ? @board.get_point(@location - 1) : nil
-        @right = self.column != b_s ? @board.get_point(@location + 1) : nil
-        @bottom = self.row > 1 ? @board.get_point(@location - b_s) : nil
+        @right = self.column != @size ? @board.get_point(@location + 1) : nil
+        @bottom = self.row > 1 ? @board.get_point(@location - @size) : nil
         @neighbors = [@top, @right, @bottom, @left].keep_if {|i| i }
         @open_neighbors = [@top, @right, @bottom, @left].keep_if {|i| i }
+        self.init_extensions
+    end
+    
+    def init_extensions #set bidirectionally
+        n_up = 0
+        n_right = true
+        if @row <= 1
+            @krd = nil
+            @lkrd = nil
+            n_up = -1
+        end
+        if @row >= @size
+            @cur = nil
+            @cul = nil
+            @kru = nil
+            @lkru = nil
+            n_up = 1
+        end
+        if @row >= (@size - 1)
+            @osu = nil
+            @kur = nil
+            @kul = nil
+            n_up = 2
+        end
+        if @row >= (@size - 2)
+            @tsu = nil
+            @lkur = nil
+            @lkul = nil
+            n_up = 3
+        end
+        
+        if @column <= 1
+            @kul = nil
+            @lkul = nil
+            n_right = -1
+        end
+        if @column >= @size
+            @cur = nil
+            @kur = nil
+            @lkur = nil
+            n_right = 1
+        end
+        if @column >= (@size - 1)
+            @osr = nil
+            @krd = nil
+            @kru = nil
+            n_right = 2
+        end
+        if @column >= (@size - 2)
+            @tsr = nil
+            @lkru = nil
+            @lkrd = nil
+            n_right = 3
+        end
+        
+        if n_up > -1
+            if n_right < 2
+                krd = @board.get_point(@location - @size + 2)
+                @krd = krd
+                @krd.klu = self
+            end
+            if n_right < 3
+                lkrd = @board.get_point(@location - @size + 3)
+            end
+        end
+        if n_up < 3
+            if n_right 
+        
     end
     
     def add_stone (color) #not an illegal move and is color's turn
@@ -51,17 +134,11 @@ class Point
         @will_kill.each{|i| if i[0] != color then i[1].dead end }
         @will_kill = Set.new
         
-        #test
-        #puts self.to_s + " is a liberty of:"
-        #@filled_neighbors.each{|i| puts i.group.to_s}
-        
         #find any groups of the same color that are connected.
         @group = Group.new(self, @board)
         @filled_neighbors.each{|i|
             if i.color == color
-                #puts "connected " + i.group.to_s + " to " + @group.to_s
                 @group.combine_group(i.group, self)
-                #puts @group.to_s
             else
                 i.group.remove_liberty(self)
             end }
@@ -69,14 +146,6 @@ class Point
         #tell neighbors this location is no longer an open neighbor
         @neighbors.each{|i| 
             i.remove_open_neighbor(self)}
-        
-        #tests
-        #puts "color = " + color.to_s
-        #puts "location = " + location.to_s
-        #puts "neighbors = " + neighbors.inject(""){|string, i| string + i.to_s}
-        #puts "open_neighbors = " + open_neighbors.inject(""){|string, i| string + i.to_s}
-        #puts "group = " + group.to_s
-        #puts ""
     end
     
     def remove_stone
