@@ -11,9 +11,10 @@ require 'Set'
 
 class Point
     
-    attr_reader :location, :color, :neighbors, :open_neighbors, :row, :column
+    attr_reader :location, :color, :neighbors, :open_neighbors, :row, :column, :top, :bottom, :left, :right
     attr_accessor :will_kill, :ko_point, :group, :filled_neighbors
-    attr_accessor :cdr, :cdl, :osd, :osl, :kld, :klu, :kdr, :kdl, :lkld, :lklu, :lkdr, :lkdl
+    attr_accessor :cdr, :cdl, :osd, :osl, :kld, :klu, :kdr, :kdl, :lkld, :lklu, :lkdr, :lkdl, :tsd, :tsl
+    attr_reader :cul, :kul, :lkul, :tsu, :osu, :cur, :kur, :lkur, :krd, :osr, :kru, :lkrd, :tsr, :lkru
     
     def initialize (location,board)
         @board = board
@@ -60,69 +61,62 @@ class Point
     end
     
     def init_extensions #set bidirectionally
-        n_up = 0
-        n_right = true
-        if @row <= 1
-            @krd = nil
-            @lkrd = nil
-            n_up = -1
+        @cul = @board.get_point_cr(self.column - 1, self.row + 1)
+        if @cul
+            @cul.cdr = self 
         end
-        if @row >= @size
-            @cur = nil
-            @cul = nil
-            @kru = nil
-            @lkru = nil
-            n_up = 1
+        @kul = @board.get_point_cr(self.column - 1, self.row + 2)
+        if @kul
+            @kul.kdr = self 
         end
-        if @row >= (@size - 1)
-            @osu = nil
-            @kur = nil
-            @kul = nil
-            n_up = 2
+        @lkul = @board.get_point_cr(self.column - 1, self.row + 3)
+        if @lkul
+            @lkul.lkdr = self 
         end
-        if @row >= (@size - 2)
-            @tsu = nil
-            @lkur = nil
-            @lkul = nil
-            n_up = 3
+        @osu = @board.get_point_cr(self.column, self.row + 2)
+        if @osu
+            @osu.osd = self 
         end
-        
-        if @column <= 1
-            @kul = nil
-            @lkul = nil
-            n_right = -1
+        @tsu = @board.get_point_cr(self.column, self.row + 3)
+        if @tsu
+            @tsu.tsd = self 
         end
-        if @column >= @size
-            @cur = nil
-            @kur = nil
-            @lkur = nil
-            n_right = 1
+        @cur = @board.get_point_cr(self.column + 1, self.row + 1)
+        if @cur
+            @cur.cdl = self 
         end
-        if @column >= (@size - 1)
-            @osr = nil
-            @krd = nil
-            @kru = nil
-            n_right = 2
+        @kur = @board.get_point_cr(self.column + 1, self.row + 2)
+        if @kur
+            @kur.kdl = self 
         end
-        if @column >= (@size - 2)
-            @tsr = nil
-            @lkru = nil
-            @lkrd = nil
-            n_right = 3
+        @lkur = @board.get_point_cr(self.column + 1, self.row + 3)
+        if @lkur
+            @lkur.lkdl = self 
         end
-        
-        if n_up > -1
-            if n_right < 2
-                krd = @board.get_point(@location - @size + 2)
-                @krd = krd
-                @krd.klu = self
-            end
-            if n_right < 3
-                lkrd = @board.get_point(@location - @size + 3)
-            end
+        @krd = @board.get_point_cr(self.column + 2, self.row - 1)
+        if @krd
+            @krd.klu = self 
         end
-        if n_up < 3
-            if n_right 
+        @osr = @board.get_point_cr(self.column + 2, self.row)
+        if @osr
+            @osr.osl = self 
+        end
+        @kru = @board.get_point_cr(self.column + 2, self.row + 1)
+        if @kru
+            @kru.kld = self 
+        end
+        @lkrd = @board.get_point_cr(self.column + 3, self.row - 1)
+        if @lkrd
+            @lkrd.lklu = self 
+        end
+        @tsr = @board.get_point_cr(self.column + 3, self.row)
+        if @tsr
+            @tsr.tsl = self 
+        end
+        @lkru = @board.get_point_cr(self.column + 3, self.row + 1)
+        if @lkru
+            @lkru.lkld = self 
+        end
         
     end
     

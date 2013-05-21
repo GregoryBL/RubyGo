@@ -25,6 +25,14 @@ class Board
         @board[location]
     end
     
+    def get_point_cr (column, row)
+        if column > @size || row > @size
+            return nil
+        else
+            self.get_point((row - 1) * @size + (column - 1))
+        end
+    end
+    
     def set_handicap (handicap)
         max_handicap = 0
         dist_from_wall = 0

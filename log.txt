@@ -20,3 +20,76 @@ GTP_INPUT>name
 GTP_INPUT>version
 = 0.0.1
 
+GTP_INPUT>boardsize 19
+= #<Board:0x007ff03a06c8e0>
+
+GTP_INPUT>boardsize 19
+= #<Board:0x007ff03a8259d8>
+
+GTP_INPUT>boardsize 19
+= #<Board:0x007ff03a834578>
+
+GTP_INPUT>clear_board
+= #<Board:0x007ff03a815e98>
+
+GTP_INPUT>komi 6.5
+= 6.5
+
+GTP_INPUT>play b l11
+= true
+
+GTP_INPUT>genmove w
+= a1
+
+GTP_INPUT>time_left w 1799 0
+= true
+
+GTP_INPUT>play b g13
+= true
+
+GTP_INPUT>genmove w
+= b4
+
+GTP_INPUT>time_left w 1799 0
+= true
+
+GTP_INPUT>play b h8
+= true
+
+GTP_INPUT>genmove w
+= c7
+
+GTP_INPUT>time_left w 1799 0
+= true
+
+GTP_INPUT>play b n5
+= true
+
+GTP_INPUT>genmove w
+= d10
+
+GTP_INPUT>time_left w 1799 0
+= true
+
+GTP_INPUT>play b q5
+= true
+
+GTP_INPUT>genmove w
+= e13
+
+GTP_INPUT>time_left w 1799 0
+= true
+
+GTP_INPUT>play b p8
+= true
+
+GTP_INPUT>genmove w
+= f16
+
+GTP_INPUT>time_left w 1799 0
+= true
+
+GTP_INPUT>play b o11
+= true
+
+GTP_INPUT>genmove w

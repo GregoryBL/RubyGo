@@ -32,10 +32,10 @@ class RGPlayer
             @color = color
         end
         
-        self.generate_move
+        move = self.generate_move
         
-        move = nil
+        @board.play(color, move)
         
-        @board.play(color, move) 
+        move
     end
 end

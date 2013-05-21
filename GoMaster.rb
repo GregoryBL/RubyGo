@@ -17,7 +17,7 @@ class Go
     
     attr_accessor :gtp, :player
     
-    def initialize (player="random")
+    def initialize (player="Player1")
         #@root = GoRoot.new(size)
         if player == "random"
             @player = RGRandomPlayer.new(self) 
