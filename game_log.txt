@@ -1,34 +1,44 @@
-add_stone called with color: blackat location: 200
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-white
--1
-["b", "1"]add_stone called with color: whiteat location: 0
-ko_point:  old_ko: 
-ko_point:  old_ko: 
-black
-Time Left: 1799 for 0 stones. 
-add_stone called with color: blackat location: 234
+add_stone called with color: blackat location: 236
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
 37
-["b", "3"]add_stone called with color: whiteat location: 58
+["b", "3"]add_stone called with color: whiteat location: 0
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 black
 Time Left: 1799 for 0 stones. 
-add_stone called with color: blackat location: 140
+add_stone called with color: blackat location: 271
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+75
+["b", "5"]add_stone called with color: whiteat location: 39
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+Time Left: 1799 for 0 stones. 
+add_stone called with color: blackat location: 141
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
 -20
-["b", ""]add_stone called with color: whiteat location: 116
+["b", ""]add_stone called with color: whiteat location: 78
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 black
 Time Left: 1799 for 0 stones. 
-add_stone called with color: blackat location: 88
+add_stone called with color: blackat location: 117
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+-20
+["b", ""]hit another stoneadd_stone called with color: whiteat location: 135
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+Time Left: 1799 for 0 stones. 
+add_stone called with color: blackat location: 136
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
@@ -37,30 +47,40 @@ white
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 black
-Time Left: 1799 for 0 stones. 
-add_stone called with color: blackat location: 91
+Time Left: 1798 for 0 stones. 
+add_stone called with color: blackat location: 154
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
 -20
-["b", ""]add_stone called with color: whiteat location: 232
+["b", ""]add_stone called with color: whiteat location: 213
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 black
-Time Left: 1799 for 0 stones. 
-add_stone called with color: blackat location: 147
+Time Left: 1798 for 0 stones. 
+add_stone called with color: blackat location: 233
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
--20
-["b", ""]add_stone called with color: whiteat location: 290
+37
+["b", "3"]add_stone called with color: whiteat location: 252
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 black
-Time Left: 1799 for 0 stones. 
-add_stone called with color: blackat location: 203
+Time Left: 1798 for 0 stones. 
+add_stone called with color: blackat location: 253
 ko_point:  old_ko: 
 ko_point:  old_ko: 
 white
--1
-["b", "1"]
+56
+["b", "4"]add_stone called with color: whiteat location: 291
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+black
+Time Left: 1798 for 0 stones. 
+add_stone called with color: blackat location: 330
+ko_point:  old_ko: 
+ko_point:  old_ko: 
+white
+132
+["b", "8"]

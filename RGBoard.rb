@@ -26,7 +26,7 @@ class Board
     end
     
     def get_point_cr (column, row)
-        if column > @size || row > @size
+        if column > @size || row > @size || column < 1 || row < 1
             return nil
         else
             self.get_point((row - 1) * @size + (column - 1))

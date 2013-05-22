@@ -21,21 +21,21 @@ GTP_INPUT>version
 = 0.0.1
 
 GTP_INPUT>boardsize 19
-= #<Board:0x007ff03a06c8e0>
+= #<Board:0x007fade40714f0>
 
 GTP_INPUT>boardsize 19
-= #<Board:0x007ff03a8259d8>
+= #<Board:0x007fade48a7610>
 
 GTP_INPUT>boardsize 19
-= #<Board:0x007ff03a834578>
+= #<Board:0x007fade48cfb60>
 
 GTP_INPUT>clear_board
-= #<Board:0x007ff03a815e98>
+= #<Board:0x007fade4082e80>
 
 GTP_INPUT>komi 6.5
 = 6.5
 
-GTP_INPUT>play b l11
+GTP_INPUT>play b j13
 = true
 
 GTP_INPUT>genmove w
@@ -44,52 +44,70 @@ GTP_INPUT>genmove w
 GTP_INPUT>time_left w 1799 0
 = true
 
-GTP_INPUT>play b g13
+GTP_INPUT>play b f15
 = true
 
 GTP_INPUT>genmove w
-= b4
+= b3
 
 GTP_INPUT>time_left w 1799 0
 = true
 
-GTP_INPUT>play b h8
+GTP_INPUT>play b j8
 = true
 
 GTP_INPUT>genmove w
-= c7
+= c5
 
 GTP_INPUT>time_left w 1799 0
 = true
 
-GTP_INPUT>play b n5
+GTP_INPUT>play b d7
+= true
+
+GTP_INPUT>genmove w
+= c8
+
+GTP_INPUT>time_left w 1799 0
+= true
+
+GTP_INPUT>play b d8
 = true
 
 GTP_INPUT>genmove w
 = d10
 
-GTP_INPUT>time_left w 1799 0
+GTP_INPUT>time_left w 1798 0
 = true
 
-GTP_INPUT>play b q5
-= true
-
-GTP_INPUT>genmove w
-= e13
-
-GTP_INPUT>time_left w 1799 0
-= true
-
-GTP_INPUT>play b p8
+GTP_INPUT>play b c9
 = true
 
 GTP_INPUT>genmove w
-= f16
+= e12
 
-GTP_INPUT>time_left w 1799 0
+GTP_INPUT>time_left w 1798 0
 = true
 
-GTP_INPUT>play b o11
+GTP_INPUT>play b f13
+= true
+
+GTP_INPUT>genmove w
+= f14
+
+GTP_INPUT>time_left w 1798 0
+= true
+
+GTP_INPUT>play b g14
+= true
+
+GTP_INPUT>genmove w
+= g16
+
+GTP_INPUT>time_left w 1798 0
+= true
+
+GTP_INPUT>play b h18
 = true
 
 GTP_INPUT>genmove w

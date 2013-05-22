@@ -12,7 +12,7 @@ require 'Set'
 class Point
     
     attr_reader :location, :color, :neighbors, :open_neighbors, :row, :column, :top, :bottom, :left, :right
-    attr_accessor :will_kill, :ko_point, :group, :filled_neighbors
+    attr_accessor :will_kill, :ko_point, :group, :filled_neighbors, :will_connect, :will_disconnect
     attr_accessor :cdr, :cdl, :osd, :osl, :kld, :klu, :kdr, :kdl, :lkld, :lklu, :lkdr, :lkdl, :tsd, :tsl
     attr_reader :cul, :kul, :lkul, :tsu, :osu, :cur, :kur, :lkur, :krd, :osr, :kru, :lkrd, :tsr, :lkru
     
@@ -48,6 +48,8 @@ class Point
         @lklu = nil
         @lkdr = nil
         @lkdl = nil
+        @will_connect = Array.new
+        @will_disconnect = Array.new
     end
     
     def init_neighbors
